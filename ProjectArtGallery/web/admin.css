@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 2, 2024, 5:59:04 AM
+    Author     : Raymond
+*/
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Menu Container */
+.menu-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* Logo Styling */
+.menu-container .logo {
+    margin-bottom: 20px;
+}
+
+.menu-container .logo img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.menu-container .logo h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation Menu Container */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Menu Styling */
+nav.menu {
+    margin-top: 20px;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.menu ul li {
+    margin-bottom: 15px;
+}
+
+nav.menu ul li a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav.menu ul li a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 30px 20px;
+    }
+
+    .menu-container .logo img {
+        max-width: 80px;
+    }
+
+    .menu-container .logo h1 {
+        font-size: 20px;
+    }
+
+    nav.menu ul li a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

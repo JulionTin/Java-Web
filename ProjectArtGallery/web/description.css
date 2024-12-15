@@ -1,0 +1,204 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2024, 10:22:18 PM
+    Author     : Raymond
+*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Artwork Styling */
+.artwork {
+    width: 50%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Description Styling */
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Report Button Styling */
+.report-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dc3545; /* Red */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.report-button:hover {
+    background-color: #a71d2a; /* Darker red on hover */
+}
+
+/* Flashing Green Donate Button */
+.button.donate {
+    background-color: #28a745; /* Initial green */
+    color: white;
+    animation: flash-green 1.5s infinite; /* Add animation */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Flashing Green Animation */
+@keyframes flash-green {
+    0% {
+        background-color: #28a745; /* Green */
+    }
+    50% {
+        background-color: #218838; /* Darker green */
+    }
+    100% {
+        background-color: #28a745; /* Green */
+    }
+}
+
+/* Comments Section Styles */
+.comments-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.comments-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Individual Comment Styles */
+.comment {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.comment-username {
+    font-weight: bold;
+    color: #0073e6;
+    margin-bottom: 5px;
+}
+
+.comment-content {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Add Comment Form Styles */
+.comment-form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.comment-form label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comment-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form .button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form .button:hover {
+    background-color: #005bb5;
+}
+
